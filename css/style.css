@@ -1,0 +1,341 @@
+@import url('media.css');
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+}
+/* .signup_box {
+    height: 100vh;
+} */
+
+
+.container-fluid {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(130deg, grey, lightblue);
+    padding: 15px;
+}
+.main_logo {
+    width: 20%;
+}
+.main_logo a{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+hr {
+    width: 85%;
+}
+
+.menubar {
+    color: aliceblue;
+    
+}
+.row {
+    width: 100%;
+}
+
+li img {
+    width: 100%;
+    box-shadow: 0 0 15px 15px lightblue;
+}
+
+.menubar ul li a {
+    color: lightblue;
+    text-decoration: none;
+    text-align: left;
+}
+
+.menubar ul li.selected a {
+    color: rgba(255, 174, 0, 0.959);
+}
+
+li {
+    width: 20%;
+    margin: 0;
+    
+}
+li p {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.films {
+    align-items: flex-end;
+}
+
+p {
+    text-align: left;
+    color: mediumvioletred;
+    font-size: 11px;
+}
+.Login {
+    display: flex;
+}
+.login_field {
+    width: 100%;
+}
+.login_field input {
+    display: block;
+    font-size: 15px;
+    color: #adadad;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid lightblue;
+    outline: none;
+    border-radius: 10px;
+    background:rgba(250, 245, 245, 0.8) ;
+}
+
+
+.btn-info {
+    display: block;
+    border-radius: 50px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.links a {
+    font-size: 10px;
+    text-decoration: none;
+    color: mediumvioletred;
+}
+
+.links a:hover {
+    color: lime;
+}
+
+.row_series {
+    width: 100%;
+    margin: 0;
+}
+
+ .card {
+     margin: 50px 0 50px 0;
+     border-radius: 15px;
+     border: none;
+     background-color: transparent;
+ }
+
+ .card li {
+     width: 80%;
+     margin: 10px;
+     background-color: rgba(228, 241, 245, 0.5);
+ }
+
+ .card li span {
+     float: right;
+ }
+
+
+ .carousel {
+     width: 50vw;
+     margin: auto;
+     box-shadow: 0 0 20px 10px lightslategray;
+ }
+ .w-100 {
+     width: 100% !important;
+     height: 50vh;
+ }
+
+
+ footer {
+     display: flex;
+     justify-content: center;
+     height: 5%;
+ }
+
+
+footer ul {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer ul li {
+     margin-right: 0;
+}
+
+footer ul li a {
+    margin: 0 0 0 10px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: lightsteelblue;
+
+}
+footer ul li a:hover{
+    color: orange;
+}
+footer span {
+    margin-left: 10px;
+    color: white;
+}
+
+/* _______________________Films CSS______________________________*/
+
+#carouselExampleFade {
+    margin-top: 30px;
+    box-shadow: 0 0 20px 7px rgb(97, 104, 105);
+}
+
+
+
+.card_films {
+    /* height: 70%; */
+    margin-top: 50px;
+    background-color:rgba(231, 245, 250, 0.671);
+    box-shadow: 0 0 30px 8px slategrey;
+    padding: 10px;
+}
+
+.card_films img {
+    width: 100%;
+}
+
+
+.overflow-hidden {
+    height: 70px;
+    position: relative;
+    padding: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+}
+
+/* _______________________________rajoute un gradient en bas du text caché_________________________ */
+/* .overflow-hidden::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(180deg, transparent, rgb(85, 167, 192) 70%);
+} */
+
+h5 {
+    text-align: center;
+    text-shadow: 0 0 10px slategrey;
+    font-size: 30px;
+}
+
+
+.films_btn {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+/* ______________Series et contact___________________ */
+
+.row_vide {
+    height: 20vh;
+}
+
+.contact_field {
+    margin-bottom: 100px;
+}
+
+.contact_field input, .form-control {
+    border-radius: 10px;
+
+}
+
+
+.btn-contact {
+    display: block;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.main_content {
+    min-height:100vh;
+}
+
+
+/* _______________signup__________________________ */
+.signup {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    color:#adadad;
+}
+ .signup h1 {
+     text-align: center;
+     font-weight: bold;
+     padding: 0 0 20px 0;
+     border-bottom: 1px solid #000;
+     color: rgb(24, 27, 29);
+ }
+ 
+.signup form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+ .signup form .user_info {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+ }
+
+ .signup .user_info input {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    color: #adadad;
+ }
+
+ 
+ .user_info span::before {
+     content: '';
+     position: absolute;
+     top:40px;
+     left: 0;
+     width: 100%;
+     height: 2px;
+     background-color: rgb(116, 160, 224);
+ }
+
+.sendpass {
+    margin-bottom: 20px;
+}
+
+ .sendpass a{
+     color: #adadad;
+     text-decoration: none;
+ }
+
+.btn_signup {
+    display: block;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+
+}
+
+ .btn_signup input{
+     width: 100%;
+     height: 40%;
+     border-radius: 50px;
+     color: white;
+     background-color: rgb(20, 26, 29);
+     border: none; 
+ }
+
+ .signup a {
+     text-decoration: none;
+     color: rgb(104, 203, 241);
+     margin-left: 10px;
+ }
