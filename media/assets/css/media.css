@@ -1,0 +1,194 @@
+@media (max-width: 990px) {
+    .container {
+        justify-content: center;
+    }
+
+    .menubar ul {
+        flex-basis: 80%;
+        justify-content: flex-end;
+    }
+
+    .login {
+        flex-basis: 100%;
+        order: 1;
+        align-content: center;
+    }
+
+    .films {
+        justify-content: center;
+        order: 2;
+    }
+    .films p{
+        display: none;
+    }
+    
+    .media_list .list-inline-item{
+        margin-bottom: 20px;
+    }
+    .series {
+        justify-content: center;
+        order: 3;
+    }
+
+    .series p{
+        display: none;
+    }
+
+    .card {
+        order: 4;
+        flex-basis: 100%;
+    }
+    
+    .carousel {
+        order: 5;
+    }
+
+    .footer {
+        order: 6;
+    }
+    
+    
+    
+}
+
+@media (max-width: 769px){
+    .aside{
+         order: 1;
+         margin-bottom: 30px;
+     }
+     .content {
+         order: 2;
+     }
+ 
+     .media_list {
+         display: flex;
+         flex-direction: column;
+ 
+     }
+     .media_list li{
+         width: 100%;
+     }
+     .articles {
+         order: 2;
+     }
+ 
+     .card_films{
+         width: 45%;
+     }
+ 
+     .inscription {
+         order: 1;
+     }
+ 
+     .search_form {
+         display: none;
+     }
+ 
+     .menubar{
+         position: fixed;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+         left: -100%;
+         width: 50%;
+         height: 100vh;
+         padding: 20px 15px;
+         background-color: rgba(0,0,0, .8);
+         transition: 0.6s all;
+     }
+ 
+     .menubar_active {
+             left: 0;
+     }
+    
+ 
+     .hamburger {
+     display: block;
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 26px;
+     height: 12px;
+     z-index: 5;
+     }
+     .hamburger span {
+         display: block;
+         height: 2px;
+         width: 100%;
+         background-color: #fff;
+         margin-bottom: 2px;
+         transition: 0.5s all;
+     }
+     .hamburger_active span{
+         margin-bottom: -2px;
+ 
+     }
+     .hamburger_active span:nth-child(1){
+         transform: translateY(3px) rotate(-45deg);
+     }
+     .hamburger_active span:nth-child(2){
+         display: none;
+     }
+     .hamburger_active span:nth-child(3){
+         transform: translateY(3px) rotate(45deg);
+     }
+
+     .list {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         min-height: 350px;
+     }
+     .list-inline-item {
+        padding-right: 0;
+        border: none;
+        margin: 10px 0 30px 0;
+    }
+    .list-inline-item a {
+        font-size: 20px;
+    }
+ 
+     
+ }
+
+
+@media (max-width: 456px){
+    .aside {
+        order: 1;
+    }
+    .articles, .content, .inscription {
+        order: 2;
+    }
+
+   
+    .articles .card_films{
+        width: 100%;
+        margin: 50px 0 0 20px;
+    }
+   
+    .user .user_info .user_name h2{
+        font-size: 25px;
+    }
+    .user .user_info .user_status h4{
+        font-size: 15px;
+    }
+
+    .modif {
+        font-size: 15px;
+    }
+
+    .user .user_info .deconnect a{
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    .media_list li {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .media_list li p{
+        display: none;
+    }
+}
